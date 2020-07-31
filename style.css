@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    outline: none;
+}
+button{
+    cursor: pointer;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#CreateTable{
+    padding: 5px 10px;
+    margin: 20px;
+}
+#mytable{
+    border:1px solid rgb(211, 211, 211);
+    margin: 20px;
+    padding: 0;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+th,td{
+    padding: 3px 10px;
+    background-color: rgb(238, 238, 238);
+}
+th{
+    font-size: 1.4rem;
+    background-color: rgb(70, 70, 70);
+    color: white;
+}
+tr td:nth-child(1){
+    padding: 0;
+    background-color: rgb(255, 101, 101);
+    text-align: center;
+}
+
+.remove-btn{
+    border: none;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+}
+.remove-btn:hover{
+    color: rgb(255, 255, 255);
+}
+
+input{
+    font-size: 1.1rem;
+    border: none;
+    padding: 2px;
+    background-color: transparent;
+}
+button{
+    padding: 5px 20px;
+}
+.inputClass{
+    color: black;
+}
+#fetch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+@media screen and (max-width:864px){
+    th{
+        font-size: 1.1rem;
+    }
+    input{
+        width: 20vw;
+    }
+}
+@media screen and (max-width:600px){
+    th{
+        font-size: 1rem;
+        padding: 7px 2px;
+    }
+    td{
+        padding: 4px 0;
+    }
+    button{
+        padding: 5px;
+    }
+}
+@media screen and (max-width:370px){
+    th{
+        font-size: .75rem;
+    }
+    input{
+        font-size: 1rem;
+    }
+}
